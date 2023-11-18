@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* Modo oscuro por defecto */
+.dark-mode {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Cambiar estilos en modo "dark-mode" */
+.dark-mode .boton {
+    background-color: rgb(106, 0, 168); /* Morado moderno */
+    color: #fff;
+}
+
+/* Estilo para la navegación en "dark-mode" */
+.dark-mode .navegacion {
+    background-color: rgb(90, 90, 90);
+}
+
+/* Cambiar estilos para enlaces en "dark-mode" */
+.dark-mode a {
+    color: #fff;
+}
+
+
+.light-mode .texto_bienvenida {
+   color: #000000;
+   font-size: 18px;
+ }
+ 
+ .light-mode .fondo_tablero h2{
+    color: #000000;
+ }
+ 
+
+
+/* Cambiar estilos para elementos del menú desplegable en "dark-mode" */
+.dark-mode .submenu-item {
+    background-color: rgb(0, 0, 0); /* Fondo oscuro */
+    background-color: rgb(90, 90, 90);
+
+}
+
+/* Estilo para los botones en "dark-mode" */
+.dark-mode .boton2 {
+    background-color: rgb(106, 0, 168); /* Morado moderno */
+    color: #fff;
+}
+
+/* Cambiar estilos en "dark-mode" para elementos adicionales según tus necesidades */
+
+/* Estilos para el fondo tablero en "dark-mode" */
+.dark-mode .fondo_tablero img {
+    opacity: 0.3;
+    
+}
+/*algebra*/
+ .light-mode .fondo_tablero_Numeros_Reales h2{
+    color: #000000;
+ }
+
+ .light-mode .texto_numeros_reales{
+    color: #000000;
+ }
+
+ .light-mode .button1{
+    color: #ffffff;
+    background-color: #000;
+ }
+
+ /*numeros reales*/
+
+
+
+
+
+
+.navegacion {
+    background-color: rgb(90, 90, 90);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Alinear elementos verticalmente en el centro */
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.start{
+    padding-left: 10px;
+}
+.logo {
+    padding-right: 120px;
+}
+
+h3{
+    position:absolute;
+    text-align: center;
+    font-family: 'Coming Soon', cursive;
+    width: 150px;
+    margin-left: 7%;
+    margin-top: -5%;
+
+}
+
+
+
+
+.linea-vertical {
+    width: 1px; /* Ancho de la línea separadora vertical */
+    background-color: #ffffff; /* Color de la línea (puedes ajustar el color) */
+    height: 100px; /* Altura de la línea vertical (ajusta según sea necesario) */
+    margin-left: -60%; /* Espacio entre la línea y los elementos 1 y 2 */
+}
+
+.mascota{
+    margin-left: 12%;
+}
+
+.modo:hover{
+    border-radius: 50%;
+    background-color: rgb(106, 0, 168);
+    padding: 5px;
+}
+
+.question:hover{
+    border-radius: 50%;
+    background-color: rgb(106, 0, 168);
+    padding: 5px;
+}
+
+.ajustes:hover{
+    border-radius: 50%;
+    background-color: rgb(106, 0, 168);
+    padding: 5px;
+}
+
+.perfil:hover{
+    border-radius: 50%;
+    background-color: rgb(106, 0, 168);
+    padding: 5px;
+}
+
+/*Tablas Clases*/
+.boton {
+    background-color: rgb(106, 0, 168);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 23%;
+    height: 52px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-family: 'Coming Soon', cursive;
+    font-size: 1.2rem;
+    
+}
+
+/* Estilo para el menú desplegable */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(90, 90, 90);
+    border-radius: 10px;
+    padding: 10px;
+    width: 21.4%;
+    margin-top: 2px;
+    margin-left: 2px;
+    font-family: 'Coming Soon', cursive;
+    font-size: 1.2rem;
+}
+.submenu-item:hover {
+    
+    border-radius: 5px;
+    padding: 8px;
+    background-color: rgb(52, 52, 52);
+    
+}
+
+/* Estilo para los elementos del menú */
+.submenu-item {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.flecha_img{
+    position: absolute;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: -25px;
+    
+}
+
+/*alerta*/
+/* Estilos para el fondo semitransparente */
+.alert-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 999; /* Se coloca encima de todo */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  /* Estilos para el cuadro de alerta */
+  /* Estilos para el fondo semitransparente (inicialmente oculto) */
+.alert-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 999; /* Se coloca encima de todo */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  /* Estilos para el cuadro de alerta */
+  .alert-box {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .alert-box h2 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .alert-box p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  button#close-alert {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  button#close-alert:hover {
+    background-color: #555;
+  }
+  /*Perfil alerta*/
+/* Estilos para el fondo semitransparente del perfil (inicialmente oculto) */
+.profile-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 999; /* Se coloca encima de todo */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  /* Estilos para el cuadro de perfil de usuario */
+  .profile-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile-image {
+    width: 100px; /* Ajusta el tamaño de la imagen de perfil según tus necesidades */
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .profile-box h2 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  button#close-profile {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  button#close-profile:hover {
+    background-color: #555;
+  }
+  
+  
+/*Tutoriales*/
+
+
+.boton2{
+   position: absolute;
+    background-color: rgb(106, 0, 168);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 23%;
+    height: 52px;
+    border-radius: 5px;
+   margin-top: 208px;
+   margin-left: -312px;
+    font-family: 'Coming Soon', cursive;
+    font-size: 1.2rem;
+}
+
+.submenu2{
+    display: none;
+    position: absolute;
+    background-color: rgb(90, 90, 90);
+    border-radius: 10px;
+    padding: 10px;
+    width: 21.4%;
+    margin-top: 2px;
+    margin-left: 2px;
+    font-family: 'Coming Soon', cursive;
+    font-size: 1.2rem;
+    margin-top: 200px;
+}
+
+/*fondo tablero*/
+.fondo_tablero img{
+    position: absolute;
+    width: 74%;
+    height: 78%;
+    object-fit: cover;
+    margin-left: 332px;
+    margin-top: -49px;
+    opacity: 0.3;
+    border-radius: 5px;
+   
+
+}
+
+.fondo_tablero h2{
+   position: absolute;
+   font-size: 2.5rem;
+   color: #ffffff;
+   margin-left: 45%;
+   font-family: 'Coming Soon', cursive;
+}
+
+.texto_bienvenida{
+   position: absolute;
+    font-family: 'Coming Soon', cursive;
+    color: #fff;
+    width: 50%;
+    margin-left: 38%;
+    margin-top: 10%;
+    text-align: center;
+    
+ 
+}
+
+
+
+
+
+/***********Numeros Reales**************/
+
+
+
+
+
+
+.fondo_tablero_Numeros_Reales img{
+    position: absolute;
+    width: 98%;
+    height: 200%;
+    object-fit: cover;
+    margin-left: 12px;
+    margin-top: 10px;
+    opacity: 0.1;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.fondo_tablero_Numeros_Reales h2{
+    
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-left: 5%;
+    margin-top: -0%;
+    font-family: 'Coming Soon', cursive;
+    padding-top: 25px;
+    
+ }
+ 
+ .texto_numeros_reales{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    color: #fff;
+    font-family: 'Coming Soon', cursive;
+    font-size: 1.2rem;
+    margin-left: 5%;
+    padding-top: 10px;
+ }
+
+
+
+ .button-container {
+    position: relative;
+    margin-top: 82%;
+    margin-left: 40%;
+}
+
+.button1 {
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000000;
+    transition: background-color 0.3s;
+}
+
+.previous-button {
+    background-color: #ffffff;
+}
+
+.next-button {
+    background-color: #ffffff;
+}
+
+
+
+.video_ex{
+    position: absolute;
+    margin-top: 48%;
+    margin-left: 28%;
+}
+
+.video_ex3{
+    position: absolute;
+    margin-top: 55%;
+    margin-left: 28%;
+}
